@@ -19,126 +19,132 @@ opcionUsuario = prompt("Que eliges \n Piedra (0) \n Papel (1) \n Tijera (2) \n L
 
 alert("Elegiste " + opciones[opcionUsuario]);
 alert("Javascript eligió " + opciones[opcionMaquina]);
-if(opcionUsuario == piedra)
+
+if(opcionUsuario!="")
 {
-	if(opcionMaquina == piedra)
+	if(opcionUsuario == piedra)
 	{
-		alert("Empate");
+		if(opcionMaquina == piedra)
+		{
+			alert("Empate");
+		}
+		else if(opcionMaquina == papel)
+		{
+			alert("Perdiste!");
+		}
+		else if(opcionMaquina == tijera)
+		{
+			alert("Ganaste");
+		}
+		else if(opcionMaquina == lagarto)
+		{
+			alert("Ganaste");
+		}
+		else if(opcionMaquina == spock)
+		{
+			alert("Perdiste!");
+		}
 	}
-	else if(opcionMaquina == papel)
+	else if(opcionUsuario == papel)
 	{
-		alert("Perdiste!");
+		
+		if(opcionMaquina == piedra)
+		{
+			alert("Ganaste!");
+		}
+		else if(opcionMaquina == papel)
+		{
+			alert("Empate");
+		}
+		else if(opcionMaquina == tijera)
+		{
+			alert("Perdiste");
+		}
+		else if(opcionMaquina == lagarto)
+		{
+			alert("Perdiste");
+		}
+		else if(opcionMaquina == spock)
+		{
+			alert("Ganaste");
+		}
 	}
-	else if(opcionMaquina == tijera)
+	else if(opcionUsuario == tijera)
 	{
-		alert("Ganaste");
+		
+		if(opcionMaquina == piedra)
+		{
+			alert("Perdiste!");
+		}
+		else if(opcionMaquina == papel)
+		{
+			alert("Ganaste");
+		}
+		else if(opcionMaquina == tijera)
+		{
+			alert("Empate");
+		}
+		else if(opcionMaquina ==lagarto)
+		{
+			alert("Ganaste");
+		}
+		else if(opcionMaquina == spock)
+		{
+			alert("Perdiste");
+		}
 	}
-	else if(opcionMaquina == lagarto)
+	else if(opcionUsuario == lagarto)
 	{
-		alert("Ganaste");
+		
+		if(opcionMaquina == piedra)
+		{
+			alert("Perdiste!");
+		}
+		else if(opcionMaquina == papel)
+		{
+			alert("Ganaste");
+		}
+		else if(opcionMaquina == tijera)
+		{
+			alert("Perdiste");
+		}
+		else if(opcionMaquina ==lagarto)
+		{
+			alert("Empate");
+		}
+		else if(opcionMaquina == spock)
+		{
+			alert("Ganaste");
+		}
 	}
-	else if(opcionMaquina == spock)
+	else if(opcionUsuario == spock)
 	{
-		alert("Perdiste!");
+		
+		if(opcionMaquina == piedra)
+		{
+			alert("Ganaste!");
+		}
+		else if(opcionMaquina == papel)
+		{
+			alert("Perdiste");
+		}
+		else if(opcionMaquina == tijera)
+		{
+			alert("Ganaste");
+		}
+		else if(opcionMaquina ==lagarto)
+		{
+			alert("Perdiste");
+		}
+		else if(opcionMaquina == spock)
+		{
+			alert("Empate");
+		}
 	}
-}
-else if(opcionUsuario == papel)
-{
-	
-	if(opcionMaquina == piedra)
+	else
 	{
-		alert("Ganaste!");
-	}
-	else if(opcionMaquina == papel)
-	{
-		alert("Empate");
-	}
-	else if(opcionMaquina == tijera)
-	{
-		alert("Perdiste");
-	}
-	else if(opcionMaquina == lagarto)
-	{
-		alert("Perdiste");
-	}
-	else if(opcionMaquina == spock)
-	{
-		alert("Ganaste");
-	}
-}
-else if(opcionUsuario == tijera)
-{
-	
-	if(opcionMaquina == piedra)
-	{
-		alert("Perdiste!");
-	}
-	else if(opcionMaquina == papel)
-	{
-		alert("Ganaste");
-	}
-	else if(opcionMaquina == tijera)
-	{
-		alert("Empate");
-	}
-	else if(opcionMaquina ==lagarto)
-	{
-		alert("Ganaste");
-	}
-	else if(opcionMaquina == spock)
-	{
-		alert("Perdiste");
-	}
-}
-else if(opcionUsuario == lagarto)
-{
-	
-	if(opcionMaquina == piedra)
-	{
-		alert("Perdiste!");
-	}
-	else if(opcionMaquina == papel)
-	{
-		alert("Ganaste");
-	}
-	else if(opcionMaquina == tijera)
-	{
-		alert("Perdiste");
-	}
-	else if(opcionMaquina ==lagarto)
-	{
-		alert("Empate");
-	}
-	else if(opcionMaquina == spock)
-	{
-		alert("Ganaste");
-	}
-}
-else if(opcionUsuario == spock)
-{
-	
-	if(opcionMaquina == piedra)
-	{
-		alert("Ganaste!");
-	}
-	else if(opcionMaquina == papel)
-	{
-		alert("Perdiste");
-	}
-	else if(opcionMaquina == tijera)
-	{
-		alert("Ganaste");
-	}
-	else if(opcionMaquina ==lagarto)
-	{
-		alert("Perdiste");
-	}
-	else if(opcionMaquina == spock)
-	{
-		alert("Empate");
+		alert("What the fuck!");
 	}
 }
 else
-{
-	alert("What the fuck!");
-}
+	alert("What the hell!");
