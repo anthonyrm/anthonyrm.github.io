@@ -1,0 +1,3 @@
+TAREA
+-Llenar datos pokemon, con vida, tipo, grito <p>
+-Agregar imagenes de acuerdo al nombre del pokemon
