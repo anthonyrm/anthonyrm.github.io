@@ -100,7 +100,7 @@ function inicio()
 {	
 	num = document.getElementById("num");
 	var pkmn = new Pokemon(num.value, aleatorio(1,100), aleatorio(1,100));
-	pkmn.vida -= 13;
+	//pkmn.vida -= 13;
 	//Usamos el Id directamente
 	nombrePokemon.innerText = pkmn.nombre;
 	datosPokemon.innerText = "Vida: " + pkmn.vida + "\n"
